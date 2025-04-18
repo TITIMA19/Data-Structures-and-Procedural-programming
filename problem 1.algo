@@ -1,0 +1,24 @@
+Problem 1: Sum of Distinct Elements: 
+ function sumOfDistinctElements(set1, set2) {
+     let sum = 0;
+     const distinctElements = new Set();
+ 
+   
+     for (let element of set1) {
+         if (!distinctElements.has(element)) {
+             distinctElements.add(element);
+             sum += element;
+         }
+     }
+ 
+     
+     for (let element of set2) {
+         if (!distinctElements.has(element)) {
+             distinctElements.add(element);
+             sum += element;
+         }
+     }
+ 
+     return sum;
+ }
+ 
